@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback Analysis</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Public Service Feedback Analysis</h1>
+        
+        <div class="input-section">
+            <h2>Add New Feedback</h2>
+            <textarea id="feedbackText" placeholder="Enter your feedback here..."></textarea>
+            <button onclick="analyzeFeedback()">Analyze Feedback</button>
+            
+            <h2>Or Upload Feedback File</h2>
+            <input type="file" id="fileInput" accept=".csv">
+            <button onclick="analyzeFile()">Analyze File</button>
+        </div>
+
+        <div id="results" class="results-section">
+            <!-- Results will be displayed here -->
+        </div>
+    </div>
+    <script src="js/analysis.js"></script>
+</body>
+</html>
